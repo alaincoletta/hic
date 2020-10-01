@@ -263,9 +263,8 @@ summary['Working dir']      = workflow.workDir
 summary['Container Engine'] = workflow.containerEngine
 if(workflow.containerEngine)
    summary['Container']     = workflow.container
-summary['Current home']     = "$HOME"
-summary['Current user']     = "$USER"
-summary['Current path']     = "$PWD"
+summary['Current user']     = workflow.userName
+summary['Current path']     = workflow.launchDir
 summary['Working dir']      = workflow.workDir
 summary['Output dir']       = params.outdir
 summary['Script dir']       = workflow.projectDir
